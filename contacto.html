@@ -19,7 +19,7 @@
         <nav>
 
             <a href="/" class="logo"><img src="./imagenes/perfume.svg" alt="Logo de Lucsa Parfums" class="logo">
-                <Lucsa Parfums>Lucsa Parfums
+                <Lucsa Parfums>LUCSA PARFUMS
             </a>
 
             <ul class="menu">
@@ -30,8 +30,49 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
+        <section>
+            <h1>Contacto</h1>
+            <p>Si deseas ponerte en contacto con nosotros, por favor completa el siguiente formulario:</p>
+            <form action="enviar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label>¿Te gusta la perfumería?</label>
+
+                <input type="radio" id="si" name="gustos" value="si">
+                <label for="si">Sí</label>
+
+                <input type="radio" id="no" name="gustos" value="no">
+                <label for="no">No</label>
+
+                <label for="perfume">Elige tu perfume favorito:</label>
+
+                <select id="perfume" name="perfume">
+                    <option value="elegiros">Elegir Perfume</option>
+                    <option value="naxos">Naxos</option>
+                    <option value="torino21">Torino 21</option>
+                    <option value="lordgeorge">Lord George</option>
+                    <option value="sartorial">Sartorial</option>
+                    <option value="royalsapphire">Royal Sapphire</option>
+                    <option value="gentlesilver Silver">Gentle F. Silver</option>
+                    <option value="amyris">Amyris</option>
+                    <option value="grischarnel">Gris Charnel</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribinos aquí"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
     </main>
 

@@ -211,7 +211,7 @@ body::before {
 
 .card {
     width: 22%;
-    margin-bottom: 20px;
+    margin: 30px;
     text-align: center;
     font-family: 'Libertinus Serif';
     font-weight: 700;
@@ -227,7 +227,7 @@ body::before {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    transition: transform 1s ease;
+    transition: transform 1.5s ease;
     border-radius: 20px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.20);
 }
@@ -244,7 +244,7 @@ body::before {
 
 main h1 {
     font-size: 2rem;
-    margin: 30px;
+    margin: 50px;
     text-align: center;
     color: white;
     text-shadow: 1px 1px 2px black;
@@ -261,7 +261,7 @@ main h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    margin: 20px;
+    margin: 50px;
 }
 
 .imggaleria {
@@ -270,7 +270,7 @@ main h1 {
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 0 118px rgba(0, 0, 0, 0.20);
-    transition: transform 1s ease;
+    transition: transform 1.5s ease;
 }
 
 .imggaleria:hover {

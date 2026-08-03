@@ -1,8 +1,13 @@
+
+/* Reseteo General */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Menu de Navegacion */
 
 header {
     position: sticky;
@@ -59,6 +64,8 @@ ul {
     font-weight: 700;
 }
 
+/* Pie de Pagina */
+
 footer {
     width: 100%;
     padding: 30px;
@@ -82,6 +89,7 @@ footer {
     font-weight: 700;
 }
 
+/* Fondo de mi pagina */
 
 body {
     min-height: 100vh;
@@ -120,6 +128,8 @@ body::before {
     background: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
+
+/* Fondo personalizado para cada pagina */
 
 .bodycontacto {
     min-height: 100vh;
@@ -194,6 +204,8 @@ body::before {
     transition: background-color 0.3s ease;
 }
 
+/* Oscurece las imágenes de fondo de las páginas */
+
 .bodycontacto::before,
 .bodyproducto::before,
 .bodygaleria::before {
@@ -203,6 +215,8 @@ body::before {
     background: rgba(0,0,0,0.3);
     z-index: 0;
 }
+
+/* Tarjetas de Productos y galeria de imagenes */
 
 .galeria {
     display: flex;
@@ -280,6 +294,8 @@ main h1 {
     transform: scale(1.30);
 }
 
+/* Formulario de contacto */
+
 .bodycontacto section {
     width: 30%;
     margin: 40px auto;
@@ -312,6 +328,8 @@ main h1 {
     margin-bottom: 8px;
 }
 
+/* Estilos para los controles del formulario */
+
 .bodycontacto input,
 .bodycontacto select,
 .bodycontacto textarea {
@@ -329,6 +347,8 @@ main h1 {
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
+
+/* Resalta el campo que está seleccionado */
 
 .bodycontacto input:focus,
 .bodycontacto select:focus,
@@ -355,6 +375,8 @@ main h1 {
 
     resize: none;
 }
+
+/* Botón para enviar el formulario */
 
 .bodycontacto button {
 
@@ -388,3 +410,18 @@ main h1 {
 
 }
 
+@media (max-width: 375px) {
+
+    .galeria {
+        flex-direction: row;    
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px auto;
+        flex-wrap: wrap;
+    }
+   
+}
